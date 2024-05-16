@@ -6,15 +6,16 @@
 }
 .top-suit {
   position: absolute;
-  top: 20px;
-  left: 20px;
-}
-.number {
-  position: absolute;
-  font-size: 150px;
+  top: 0;
+  left: 0;
+  font-size: 100px;
 }
 .button-suit {
   position: absolute;
-  bottom: 20p;
-  right: 20px;
+  bottom: 0;
+  right: 0;
+  font-size: 100px;
+}
+.number {
+  font-size: 200px;
 }
