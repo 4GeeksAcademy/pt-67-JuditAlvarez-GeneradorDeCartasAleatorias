@@ -2,30 +2,8 @@ import "bootstrap";
 import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import generateCards from "./generateCards";
 window.onload = function() {
-  const cardContent = mixCards();
-  const cardElement = document.getElementById("card");
-  cardElement.innerHTML = cardContent;
-  const topSuitSpan = document.getElementById("top-suit");
-  const numberSpan = document.getElementById("number");
-  const buttonSuitSpan = document.getElementById("button-suit");
+  const app = document.getElementById("app");
+  app.innerHTML = generateCards();
 };
-function mixCards() {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K"];
-  const deck = [" ♦ ", " ♥ ", " ♠ ", " ♣"];
-  const color = ["red", "black"];
-  const mixNumber = Math.floor(Math.random() * numbers.length);
-  const mixDeck = Math.floor(Math.random() * deck.length);
-  const mixColor = Math.floor(Math.random() * color.length);
-  const card = `${numbers[mixNumber]} ${deck[mixDeck]} ${color[mixColor]}`;
-  // return card;
-  const cardElements = card.split(" ");
-  document.getElementById("number").innerText = cardElements[0];
-  document.getElementById("top-suit").innerText = cardElements[1];
-  document.getElementById("button-suit").innerText = cardElements[2];
-  return card;
-  // topSuitSpan.textContent = mixDeck;
-  // numberSpan.textContent = mixNumber;
-  // buttonSuitSpan.textContent = mixDeck;
-}
-mixCards();
