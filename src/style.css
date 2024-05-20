@@ -19,3 +19,6 @@
 .number {
   font-size: 200px;
 }
+.rotated {
+  transform: rotate(180deg);
+}

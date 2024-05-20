@@ -27,7 +27,7 @@ class="container-fluid text-center p-3 mb-2 bg-success text-white d-flex justify
 >
   <span class="top-suit p-3 ${selectedColor}" >${deckPossition}</span>
   <span class="number ${selectedColor}">${numberPossition}</span>
-  <span class="button-suit p-3 ${selectedColor}">${deckPossition}</span>
+  <span class="button-suit p-3 ${selectedColor} rotated">${deckPossition}</span>
 </div>
 </div>
 `;
